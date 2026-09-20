@@ -1,0 +1,46 @@
+{
+  "configVersion": "v2",
+  "app": {
+    "appIdType": 0,
+    "appId": 1128052,
+    "appName": "Bip Six Progress",
+    "appType": "watchface",
+    "version": { "code": 15, "name": "2.0.3" },
+    "vender": "Miguel Ferreira",
+    "description": "A 24-hour progress watch face for Amazfit Bip 6, with high-contrast Manrope numerals and half-hour markers.",
+    "icon": "icon.png",
+    "cover": ["cover.png"]
+  },
+  "permissions": [],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "1.0.0",
+      "target": "1.0.1",
+      "minVersion": "1.0.0"
+    }
+  },
+  "i18n": {
+    "en-US": { "appName": "Bip Six Progress" }
+  },
+  "defaultLanguage": "en-US",
+  "debug": false,
+  "targets": {
+    "bip-6": {
+      "module": {
+        "watchface": {
+          "path": "watchface/default-target/index",
+          "main": 1,
+          "editable": 0,
+          "lockscreen": 0,
+          "hightCost": 0
+        }
+      },
+      "platforms": [
+        { "name": "Amazfit Bip 6 CN", "deviceSource": 9765120 },
+        { "name": "Amazfit Bip 6", "deviceSource": 9765121 },
+        { "name": "Amazfit Bip 6", "deviceSource": 10158337 }
+      ],
+      "designWidth": 390
+    }
+  }
+}

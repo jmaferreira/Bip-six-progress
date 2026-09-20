@@ -1,0 +1,36 @@
+{
+  "name": "bip-six-progress",
+  "version": "2.0.3",
+  "description": "A graphic progress watch face for the Amazfit Bip 6.",
+  "author": "Miguel Ferreira <jmaferreira+zepp@gmail.com>",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "keywords": [
+    "amazfit",
+    "bip-6",
+    "zepp-os",
+    "watchface"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmaferreira/Bip-six-progress.git"
+  },
+  "homepage": "https://github.com/jmaferreira/Bip-six-progress#readme",
+  "bugs": {
+    "url": "https://github.com/jmaferreira/Bip-six-progress/issues",
+    "email": "jmaferreira+zepp@gmail.com"
+  },
+  "_moduleAliases": {
+    "zeppos-app-utils": "node_modules/@zeppos/zeus-cli/private-modules/zeppos-app-utils"
+  },
+  "scripts": {
+    "generate:clock-face": "node scripts/generate-clock-face-assets.js",
+    "build": "zeus build",
+    "preview": "zeus preview",
+    "bridge": "zeus bridge"
+  },
+  "devDependencies": {
+    "@zeppos/zeus-cli": "1.9.3",
+    "package-json": "7.0.0"
+  }
+}
